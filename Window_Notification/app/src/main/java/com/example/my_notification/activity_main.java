@@ -6,6 +6,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -42,7 +43,8 @@ public class activity_main extends AppCompatActivity {
         Notification notification;
         IconCompat iconCompat = IconCompat.createWithResource(this, R.drawable.ic_notifications);
 
-        PendingIntent pendingIntent = PendingIntent.getActivity(this,REQUEST_CODE,new Intent(this,com.example.my_notification.Notification.class),PendingIntent.FLAG_IMMUTABLE);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this,REQUEST_CODE,
+                new Intent(this,com.example.my_notification.Notification.class),PendingIntent.FLAG_IMMUTABLE);
 
         NotificationCompat.InboxStyle inboxStyle = new NotificationCompat.InboxStyle();
         inboxStyle.addLine("First line")
@@ -56,7 +58,6 @@ public class activity_main extends AppCompatActivity {
                 .setBigContentTitle("Full Message")
                 .setSummaryText("+2 more");
 
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             notification = new NotificationCompat.Builder(this)
                     .setLargeIcon(iconCompat.toIcon())
@@ -64,6 +65,7 @@ public class activity_main extends AppCompatActivity {
                     .setContentText("My Notification")
                     .setContentTitle("New NOTIFI")
                     .setSubText("New message from Varad")
+                    .setColor(Color.argb(255,128,0,0))
                     .setStyle(inboxStyle)
                     .setContentIntent(pendingIntent)
                     .setChannelId(CHANNEL_ID)
@@ -77,6 +79,7 @@ public class activity_main extends AppCompatActivity {
                     .setContentTitle("New NOTIFI")
                     .setContentText("My Notification")
                     .setSubText("New message from Varad")
+                    .setColor(Color.argb(255,128,0,0))
                     .setStyle(inboxStyle)
                     .setContentIntent(pendingIntent)
                     .build();
