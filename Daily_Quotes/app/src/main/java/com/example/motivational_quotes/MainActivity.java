@@ -20,11 +20,7 @@ import com.example.motivational_quotes.Categories.Category_model;
 
 import java.util.ArrayList;
 import java.util.List;
-
-
-
 public class MainActivity extends AppCompatActivity {
-
     Button favbtn;
     private SearchView searchView;
     private RecyclerView rv_category;

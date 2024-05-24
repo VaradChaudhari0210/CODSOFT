@@ -11,7 +11,9 @@
 
     <TextView
         android:id="@+id/notification_txt"
-        android:text="Notification"
+        android:text="Notification Clicked"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
