@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TODO_List" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/blue_green</item>"
+    </style>
+
+
+    <style name="SCREEN">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CHECKBOX">
+        <item name="android:buttonTint">@color/button</item>
+    </style>
+
+    <style name="BUTTON">
+        <item name="android:backgroundTint">@color/button</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FLOATBUTTON">
+        <item name="android:backgroundTint">@color/blue_green</item>
+        <item name="rippleColor">@color/white</item>
+    </style>
+
+    <style name="datetime">
+        <item name="android:textColor">@color/datetime</item>
+    </style>
+
+    <style name="imgbtn">
+        <item name="tint">@color/button</item>
+    </style>
+    
+    <style name="Theme.TODO_List" parent="Base.Theme.TODO_List" />
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="15dp"
+    style="@style/TEXT"
+    android:layout_centerHorizontal="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Title"
+            style="@style/TEXT"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_title"
+            android:layout_marginTop="10dp"
+            style="@style/TEXT"
+            android:maxLines="2"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txt_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_task_title"
+            android:layout_marginTop="20dp"
+            android:text="Description"
+            style="@style/TEXT"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_task_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_desc"
+            style="@style/TEXT"
+            android:layout_marginTop="10dp"
+            android:maxLines="4"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/datebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_task_desc"
+            android:layout_alignStart="@+id/et_task_desc"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            style="@style/BUTTON"
+            android:text="Date" />
+
+
+        <Button
+            android:id="@+id/timebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_task_desc"
+            android:layout_alignEnd="@+id/et_task_desc"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            style="@style/BUTTON"
+            android:text="Time" />
+
+        <Button
+            android:id="@+id/addbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timebtn"
+            android:layout_centerHorizontal="true"
+            style="@style/BUTTON"
+            android:layout_marginTop="20dp"
+            android:text="Add" />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TODO_List" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/blue_green</item>"
+        <item name="colorAccent">@color/button</item>
+    </style>
+
+
+    <style name="SCREEN">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CHECKBOX">
+        <item name="android:buttonTint">@color/orange</item>
+    </style>
+
+    <style name="BUTTON">
+        <item name="android:backgroundTint">@color/orange</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="FLOATBUTTON">
+        <item name="android:backgroundTint">@color/red</item>
+        <item name="rippleColor">@color/black</item>
+    </style>
+
+    <style name="datetime">
+        <item name="android:textColor">#fca6b0</item>
+    </style>
+
+    <style name="imgbtn">
+        <item name="tint">@color/orange</item>
+    </style>
+
+    <style name="Theme.TODO_List" parent="Base.Theme.TODO_List" />
+</resources>
